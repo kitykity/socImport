@@ -5,10 +5,11 @@
 # Day One journal posts.
 # 1/18/15 Script created
 # 1/19/15 Added Facebook photo post import
+# 3/19/15 Updated the thisDir variable (thanks apographon!)
 
 thisUser="suzy" # Change to the user on your computer that has DropBox mounted.
 socDir="/Users/${thisUser}/Dropbox/Apps/Day One/Incoming"
-thisDir="/Users/suzy/socImport" # Directory where this script is running from
+thisDir="/Users/${thisUser}/socImport" # Directory where this script is running from
 
 if ls "${socDir}"/*.txt > /dev/null 2>&1 ; then
   ls "${socDir}"/*.txt > ${thisDir}/txtlist.socImport
